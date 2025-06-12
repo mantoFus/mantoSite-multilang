@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pasarela de Pago Manto</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; background: #fdf6e3; color: #333; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        h2 { color: #bfa136; }
+        button { padding: 10px 20px; background-color: #bfa136; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        button:hover { background-color: #a68d29; }
+    </style>
+</head>
+<body>
+    <div id="google_translate_element"></div>
+    <div class="container">
+        <h2>Pasarela de Pago Oficial MANTO</h2>
+        <p>Selecciona tu método de pago:</p>
+        <button onclick="alert('Pago en MANTO MT pronto disponible')">Pagar con MANTO MT</button>
+        <button onclick="alert('Redirigiendo a Stripe...')">Pagar con Tarjeta (Stripe)</button>
+        <button onclick="alert('Próximamente en USDC y COP')">Otras opciones</button>
+    </div>
+    
+<style>
+#google_translate_element {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+</style>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'es',
+      includedLanguages: 'en,fr,it,de,pt,zh-CN,ar,ru,hi',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
